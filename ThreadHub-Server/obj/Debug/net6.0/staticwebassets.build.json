@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8wBLZjmxXsmgyTL7rsmssvcOk3U9JJLobSDc5n8bAFM=",
+  "Source": "ThreadHub-Server",
+  "BasePath": "_content/ThreadHub-Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
