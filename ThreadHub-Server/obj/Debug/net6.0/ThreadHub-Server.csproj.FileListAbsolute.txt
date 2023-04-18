@@ -24,3 +24,16 @@ C:\PROJECTS\ThreadHub\ThreadHub-Server\obj\Debug\net6.0\refint\ThreadHub-Server.
 C:\PROJECTS\ThreadHub\ThreadHub-Server\obj\Debug\net6.0\ThreadHub-Server.pdb
 C:\PROJECTS\ThreadHub\ThreadHub-Server\obj\Debug\net6.0\ThreadHub-Server.genruntimeconfig.cache
 C:\PROJECTS\ThreadHub\ThreadHub-Server\obj\Debug\net6.0\ref\ThreadHub-Server.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\System.Text.Json.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\obj\Debug\net6.0\ThreadHub-Server.csproj.CopyComplete
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Newtonsoft.Json.dll

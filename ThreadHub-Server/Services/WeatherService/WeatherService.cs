@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.SignalR;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
+using Newtonsoft.Json;
 
-namespace ThreadHub_Server.Services
+namespace ThreadHub_Server.Services.WeatherService
 {
     public class WeatherService : Hub
     {
@@ -8,16 +10,26 @@ namespace ThreadHub_Server.Services
 
         public override async Task OnConnectedAsync()
         {
-            Console.WriteLine("Connect");
             await base.OnConnectedAsync();
-
-            await Clients.Caller.SendAsync("ReceiveMessage", $"Weather is {random.Next(10)}");
         }
 
         public override async Task OnDisconnectedAsync(Exception exception)
         {
             Console.WriteLine("Disconnect", exception);
             await base.OnDisconnectedAsync(exception);
+        }
+
+        public async void RequestWeatherForecast(GetWeatherClass _getWeather)
+        {
+            double latitude = _getWeather.Latitude;
+            double longitude = _getWeather.Longitude;
+
+            Console.WriteLine($"{latitude} {longitude}");
+
+            var openWeatherMapService = new OpenWeatherMapService();
+            var weatherData = openWeatherMapService.GetWeatherAsync(latitude, longitude);
+            await Clients.Caller.SendAsync("RequestedWeatherForecast", weatherData);
+
         }
 
         public async void SendData(string data)
