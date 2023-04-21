@@ -10,16 +10,9 @@ namespace ThreadHub_Server
 {
     public class Startup
     {
-        public IConfiguration Configuration { get; }
-
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSignalR();
+            services.AddSignalR().AddNewtonsoftJsonProtocol();
 
             services.AddCors(options =>
             {
@@ -31,6 +24,8 @@ namespace ThreadHub_Server
                         .AllowCredentials();
                 });
             });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,16 +35,14 @@ namespace ThreadHub_Server
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseRouting();
-
             app.UseCors();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapHub<WeatherService>("/WeatherServiceGateway");
             });
         }
+  
     }
 
 }

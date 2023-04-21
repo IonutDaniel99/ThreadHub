@@ -37,3 +37,10 @@ C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\System.Text.Json.dll
 C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\PROJECTS\ThreadHub\ThreadHub-Server\obj\Debug\net6.0\ThreadHub-Server.csproj.CopyComplete
 C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Common.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\System.IO.Pipelines.dll

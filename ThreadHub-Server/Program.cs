@@ -22,6 +22,10 @@ namespace ChatService
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                }
+                ).ConfigureServices((hostContext, services) =>
+                {
+
                 });
     }
 }
