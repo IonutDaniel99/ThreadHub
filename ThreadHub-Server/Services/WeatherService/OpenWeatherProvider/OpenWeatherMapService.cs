@@ -14,8 +14,6 @@ public class OpenWeatherMapService
     public string _apiKey;
     public readonly HttpClient _httpClient;
 
-    public Startup Startup { get; }
-
     public OpenWeatherMapService()
     {   
         _httpClient = new HttpClient();
@@ -24,16 +22,10 @@ public class OpenWeatherMapService
 
     public async Task<WeatherDataClass> GetWeatherAsync(double Lat, double Long)
     {
-        // Construct the API URL with the city name and API key
         var apiUrl = $"https://api.openweathermap.org/data/2.5/weather?lat={Lat}&lon={Long}&appid={this._apiKey}";
-        // Send a GET request to the API endpoint
         var response = await _httpClient.GetAsync(apiUrl);
-
-        // Throw an exception if the response is not successful
         response.EnsureSuccessStatusCode();
-
         var content = await response.Content.ReadFromJsonAsync<WeatherDataClass>();
-        // Parse the JSON response into a WeatherData object
         return content;
     }
 }

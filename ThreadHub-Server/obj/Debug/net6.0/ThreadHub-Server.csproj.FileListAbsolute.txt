@@ -44,3 +44,6 @@ C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.Dep
 C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
 C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 C:\PROJECTS\ThreadHub\ThreadHub-Server\bin\Debug\net6.0\System.IO.Pipelines.dll
+G:\ThreadHub\ThreadHub-Server\obj\Debug\net6.0\ThreadHub-Server.dll
+G:\ThreadHub\ThreadHub-Server\obj\Debug\net6.0\refint\ThreadHub-Server.dll
+G:\ThreadHub\ThreadHub-Server\obj\Debug\net6.0\ThreadHub-Server.pdb
