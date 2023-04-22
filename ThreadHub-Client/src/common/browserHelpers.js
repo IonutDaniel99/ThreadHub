@@ -10,6 +10,3 @@ export function getValueFromLocalStorage(key, defaultValue) {
 export function setValueInLocalStorage(key, value) {
     localStorage.setItem(key, value);
 }
-
-
-

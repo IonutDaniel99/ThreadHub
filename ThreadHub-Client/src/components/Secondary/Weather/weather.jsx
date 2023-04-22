@@ -1,15 +1,14 @@
 import { HubConnectionBuilder } from "@microsoft/signalr";
 import { createEffect, createSignal, onCleanup, onMount } from "solid-js";
 import { getLocation } from "~/common/browserPermissions";
-import SunnySvg from "../../../../public/icons/Sunny";
-import LocationIcon from "../../../../public/icons/LocationIcon";
 import {
-    formatTime,
     getHourAndMinute,
     getImageBasedOnWeather,
     getSeconds,
     kelvinToCelsius,
 } from "./weatherHelpers";
+
+import { FaSolidLocationDot } from "solid-icons/fa";
 
 export default function Weather() {
     const [isGeolocation, setIsGeolocation] = createSignal("");
@@ -18,7 +17,7 @@ export default function Weather() {
     const [time, setTime] = createSignal(new Date());
 
     const connection = new HubConnectionBuilder()
-        .withUrl("http://localhost:5000/WeatherServiceGateway")
+        .withUrl("https://localhost:5000/WeatherServiceGateway")
         .withAutomaticReconnect()
         .build();
 
@@ -46,11 +45,11 @@ export default function Weather() {
         return () => clearInterval(intervalId);
     });
 
-    onCleanup(() => connection.stop());
     // INVOCATIONS
     const askForRefresh = () => {
         connection.invoke("AskWeatherRefresh");
     };
+
     //Listeeners
     connection.on("getWeatherForecast", (weatherData) => {
         setWeatherData(JSON.parse(weatherData));
@@ -59,6 +58,7 @@ export default function Weather() {
 
     connection.on("getWeatherRefresh", (data) => console.log(data));
 
+    onCleanup(() => connection.stop());
     return (
         <Show
             when={!isLoading()}
@@ -80,7 +80,7 @@ export default function Weather() {
                                 Refresh
                             </div>
                             <div class="gap-1 visible group-hover:invisible flex items-center">
-                                <LocationIcon />
+                                <FaSolidLocationDot />
                                 {weatherData().name}
                             </div>
                         </div>
