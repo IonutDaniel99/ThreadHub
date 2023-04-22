@@ -11,8 +11,6 @@ export default function Spotify() {
     const [isPlayActive, setIsPlayActive] = createSignal(true);
     const [isVolumeActive, setIsVolumeActive] = createSignal(false);
 
-    console.log(isVolumeActive());
-
     return (
         <div class="h-56 w-full rounded-2xl overflow-hidden border-2 relative text-white ">
             <div class="z-10 h-1/2 w-full flex p-4">
@@ -25,18 +23,18 @@ export default function Spotify() {
                     src="/images/Spotify/bg.png"
                     class="w-24 h-24 border-[1px] rounded-2xl border-white "
                 />
-                <div class="flex flex-col justify-evenly pl-2 pt-2 gap-4">
+                <div class="flex flex-col justify-evenly pl-2 pt-3 gap-3">
                     <div class="flex flex-col w-full">
                         <p class="text-xl leading-none">Stele Cazatoare</p>
-                        <p class="text-xs leading-none opacity-60 pt-1">
+                        <p class="text-sm leading-none opacity-60 pt-1">
                             Puya, Tudor Chirila
                         </p>
                     </div>
                     <div>
-                        <p class="text-xs leading-none">Next</p>
-                        <p class="text-xs leading-none truncate w-11/12 opacity-60">
+                        <p class="text-sm leading-none">Next</p>
+                        <marquee class="text-sm leading-none truncate w-full omarqueeacity-60">
                             Must Have Been • Usb Players
-                        </p>
+                        </marquee>
                     </div>
                 </div>
             </div>

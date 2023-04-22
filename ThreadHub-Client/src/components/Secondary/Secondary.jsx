@@ -26,7 +26,7 @@ export default function Secondary() {
 
     return (
         <div class="w-2/12 flex flex-col">
-            <div class="h-12 flex items-center mx-2.5 mt-1">
+            <div class="h-12 flex items-center mx-2.5 my-1">
                 <div
                     class={`h-10 w-10 flex items-center justify-center rounded-xl ${
                         isWeatherOpen() ? "bg-amber-300" : ""
@@ -75,7 +75,7 @@ export default function Secondary() {
                     />
                 </div>
             </div>
-            <div class="h-3/5 mx-2.5 overflow-y-auto mt-3">
+            <div class="h-3/5 mx-2.5 overflow-y-auto gap-2 flex flex-col">
                 <Show when={isWeatherOpen()} children={<Weather />} />
                 <Show when={isSpotifyOpen()} children={<Spotify />} />
             </div>
